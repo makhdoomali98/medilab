@@ -1,5 +1,5 @@
 <?php 
-include '../../config.php';
+include '../../app_config.php';
 
 
 print_r(Config::$dbpassword);

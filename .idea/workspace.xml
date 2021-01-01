@@ -2,9 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13773d0e-1519-441b-a49b-67bb007a31b2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/includes_user/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes_user/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/view/admin_view/areas/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/view/admin_view/category/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/view/admin_view/orders/example.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/view/admin_view/orders/example.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/view/admin_view/orders/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/view/admin_view/orders/pdf.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/view/admin_view/orders/reportData.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/view/admin_view/products/edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/view/admin_view/products/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/view/admin_view/users/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/app_config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes_user/footer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes_user/header.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/Helper/Connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/users/Helper/Connect.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +42,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../videoPortal" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/admin/index.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.index.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -39,7 +65,13 @@
       <option name="presentableId" value="Default" />
       <updated>1608560159049</updated>
       <workItem from="1608560163671" duration="163000" />
-      <workItem from="1608560329844" duration="2212000" />
+      <workItem from="1608560329844" duration="17884000" />
+      <workItem from="1608808498852" duration="28499000" />
+      <workItem from="1608895460425" duration="25241000" />
+      <workItem from="1609247308269" duration="17502000" />
+      <workItem from="1609328283566" duration="13720000" />
+      <workItem from="1609413688112" duration="17209000" />
+      <workItem from="1609501048209" duration="20766000" />
     </task>
     <servers />
   </component>
