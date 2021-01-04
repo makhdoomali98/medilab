@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="13773d0e-1519-441b-a49b-67bb007a31b2" name="Default Changelist" comment="">
 <<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/admin/view/admin_view/areas/index.php" afterDir="false" />
@@ -31,6 +32,12 @@
       <change beforePath="$PROJECT_DIR$/admin/view/admin_view/orders/pdfcrowd.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/admin_view/orders/pdfcrowd.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/view/admin_view/orders/reportData.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/admin_view/orders/reportData.php" afterDir="false" />
 >>>>>>> caa82db3620cce7e8784e96f44d80cbb9a8356ce
+=======
+    <list default="true" id="497f2206-bef7-41a4-a7d5-d1e1f1c4248f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/Helper/Connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Helper/Connect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_config.php" beforeDir="false" afterPath="$PROJECT_DIR$/app_config.php" afterDir="false" />
+>>>>>>> 4afed1d6aeff1fc0e675718e58ad3bb3278b0480
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
