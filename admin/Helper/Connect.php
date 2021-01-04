@@ -1,14 +1,14 @@
 <?php 
-//require_once '../../app_config.php';
+//require_once '../../Project_Config.php';
 include_once __DIR__. '../../../app_config.php';
 
 Class ConnectionClass {
     public $conn;
     function __construct(){
-        $host = app_config::$host;
-        $dbusername = app_config::$dbusername;
-        $dbpassword = app_config::$dbpassword;
-        $dbname = app_config::$dbname;
+        $host = Project_Config::$host;
+        $dbusername = Project_Config::$dbusername;
+        $dbpassword = Project_Config::$dbpassword;
+        $dbname = Project_Config::$dbname;
         // Create connection
         $conn = new mysqli($host, $dbusername, $dbpassword, $dbname);
 

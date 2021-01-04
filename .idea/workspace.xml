@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13773d0e-1519-441b-a49b-67bb007a31b2" name="Default Changelist" comment="">
+    <list default="true" id="497f2206-bef7-41a4-a7d5-d1e1f1c4248f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/Controller/RegisterClass.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Controller/RegisterClass.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/models/RegisterModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/models/RegisterModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/admin_view/orders/example.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/admin_view/orders/pdf.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/admin_view/orders/pdf.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/admin_view/orders/pdfcrowd.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/admin_view/orders/pdfcrowd.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/admin_view/orders/reportData.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/admin_view/orders/reportData.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/Helper/Connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Helper/Connect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_config.php" beforeDir="false" afterPath="$PROJECT_DIR$/app_config.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

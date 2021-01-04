@@ -1,5 +1,5 @@
 <?php
- class app_config{
+ class Project_Config{
     public static $host = "localhost";
     public static $dbusername = "root";
     public static $dbpassword = "";
