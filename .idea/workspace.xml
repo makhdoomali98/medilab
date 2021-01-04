@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13773d0e-1519-441b-a49b-67bb007a31b2" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/admin/view/admin_view/areas/index.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/admin/view/admin_view/category/index.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/admin/view/admin_view/orders/example.html" afterDir="false" />
@@ -20,6 +21,16 @@
       <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/users/Helper/Connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/users/Helper/Connect.php" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/Controller/RegisterClass.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Controller/RegisterClass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/models/RegisterModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/models/RegisterModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/admin_view/orders/example.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/admin_view/orders/pdf.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/admin_view/orders/pdf.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/admin_view/orders/pdfcrowd.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/admin_view/orders/pdfcrowd.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/admin_view/orders/reportData.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/admin_view/orders/reportData.php" afterDir="false" />
+>>>>>>> caa82db3620cce7e8784e96f44d80cbb9a8356ce
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +50,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+<<<<<<< HEAD
+=======
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+>>>>>>> caa82db3620cce7e8784e96f44d80cbb9a8356ce
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -72,6 +87,11 @@
       <workItem from="1609328283566" duration="13720000" />
       <workItem from="1609413688112" duration="17209000" />
       <workItem from="1609501048209" duration="20766000" />
+<<<<<<< HEAD
+=======
+      <workItem from="1609644215324" duration="13000" />
+      <workItem from="1609759682433" duration="9745000" />
+>>>>>>> caa82db3620cce7e8784e96f44d80cbb9a8356ce
     </task>
     <servers />
   </component>
