@@ -46,8 +46,9 @@ elseif($method == 'approveOrder'){
 elseif($method == 'rejectOrder'){
     $register->rejectOrder($_GET);
 }elseif ($method == 'generate_report'){
+
     $register->generate_report($_POST, $_FILES);
-    die();
+
 }
 
 

@@ -3,7 +3,6 @@ require 'pdfcrowd.php';
 include '../../../models/RegisterModel.php';
 require_once '../../../Helper/Connect.php';
 $connection = new connectionClass;
-$result = new RegisterModel($connection->conn);
 
 Class PDF{
 
@@ -15,7 +14,7 @@ Class PDF{
         try
         {
             $temp = "999999";
-            $data = $this->html_page($base64, );
+            $data = $this->html_page($base64,);
             // create the API client instance
             $client = new \Pdfcrowd\HtmlToPdfClient("ibrar", "052f3b7182fcf4f136dd4001616a42d7");
 
@@ -32,7 +31,7 @@ Class PDF{
         }
     }
 
-    function html_page($img, $data){
+    function html_page($img){
 
         return '<!doctype html>
 <html>

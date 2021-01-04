@@ -97,6 +97,7 @@ class RegisterClass{
 
     }
     function generate_report($data,$files){
+
         $this->register->generate_report($data, $files);
 
     }

@@ -1,5 +1,5 @@
 <?php
-include '../view/admin_view/orders/pdf.php';
+
 
 class RegisterModel
 {
@@ -101,12 +101,12 @@ class RegisterModel
         }
         return $this->conn->query($sql);
     }
-    function generate_report($data,$files){
 
+
+    function generate_report($data,$files){
         $image = $this->upload_file($files['report'], 'reports/images');
         $id = ($data['order_id']);
-
-        $sql = "SELECT orders.id, orders.user_id, orders.product_id, users.name as user_name, products.name, orders.order_time, orders.status FROM orders 
+        $sql = "SELECT orders.id, orders.user_id, orders.product_id, users.name as user_name, products.name, orders.order_time, orders.status, orders.report FROM orders 
                                     INNER JOIN products on orders.product_id = products.id 
                                     INNER JOIN users on orders.user_id = users.id
                                     WHERE orders.id = $id";
@@ -114,9 +114,8 @@ class RegisterModel
         $qry = $this->conn->query($qry);
         $result = $this->conn->query($sql);
         $result = mysqli_fetch_assoc($result);
-        $generate = new PDF();
-        $generate->generate_pdf();
-
+        $generate = new PDF($result,$qry);
+        $generate->generate_pdf($result,$qry);
         print_r($qry);
         echo "<br>";
         print_r($result);
