@@ -1,0 +1,8 @@
+{
+    "require": {
+        "twilio/sdk": "^6.15",
+        "mailgun/mailgun-php": "^3.2",
+        "php-http/guzzle6-adapter": "^2.0",
+        "php-http/message": "^1.10"
+    }
+}
