@@ -3,8 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="497f2206-bef7-41a4-a7d5-d1e1f1c4248f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/Helper/Connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Helper/Connect.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_config.php" beforeDir="false" afterPath="$PROJECT_DIR$/app_config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/Controller/RegisterClass.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Controller/RegisterClass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/encrypt.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/encrypt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/include_admin/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/include_admin/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/models/RegisterModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/models/RegisterModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/admin_view/areas/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/admin_view/areas/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/admin_view/category/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/admin_view/category/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/admin_view/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/admin_view/dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/admin_view/orders/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/admin_view/orders/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/admin_view/orders/pdf.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/admin_view/orders/pdfcrowd.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/admin_view/orders/reportData.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/admin_view/orders/reportData.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/admin_view/products/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/admin_view/products/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/admin_view/users/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/admin_view/users/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +42,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../videoPortal" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel_crud" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -45,7 +60,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="13773d0e-1519-441b-a49b-67bb007a31b2" name="Default Changelist" comment="" />
+      <changelist id="497f2206-bef7-41a4-a7d5-d1e1f1c4248f" name="Default Changelist" comment="" />
       <created>1608560159049</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -60,6 +75,12 @@
       <workItem from="1609501048209" duration="20766000" />
       <workItem from="1609644215324" duration="13000" />
       <workItem from="1609759682433" duration="9745000" />
+      <workItem from="1609894643737" duration="70000" />
+      <workItem from="1609939894352" duration="1446000" />
+      <workItem from="1610115955617" duration="126000" />
+      <workItem from="1610316954232" duration="4285000" />
+      <workItem from="1610322249241" duration="6800000" />
+      <workItem from="1610365605150" duration="5321000" />
     </task>
     <servers />
   </component>
@@ -77,5 +98,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

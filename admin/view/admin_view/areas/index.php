@@ -1,5 +1,9 @@
 <?php
-
+session_start();
+if (!isset($_SESSION["users"])){
+    header("location: http://" . $_SERVER['HTTP_HOST'] . "/medilab/admin/view/register/login.php");
+    die();
+}
 include '../../../include_admin/header.php';
 include '../../../models/RegisterModel.php';
 //
@@ -105,11 +109,11 @@ $cities = new RegisterModel($connection->conn);
                                             <td>
                                                 <?php if($row["state"] == '1'){?>
                                                 <a href="../../../index.php?id=<?php echo $row['id']; ?>&action=deActivate"class="btn btn-warning">DE-ACTIVATE</a>
-                                                <?php }else{?>
+                                                <?php }else {?>
                                                 <a href="../../../index.php?id=<?php echo $row['id']; ?>&action=Activate"class="btn btn-warning">ACTIVATE</a>
                                                 <?php }?>
 
-                                                <a href="../../../index.php?id=<?php echo $row['id']; ?>&action=deleteCity" class="btn btn-danger">Delete</a>
+<!--                                                <a href="../../../index.php?id=--><?php //echo $row['id']; ?><!--&action=deleteCity" class="btn btn-danger">Delete</a>-->
                                             </td>
                                             <?php
                                             }

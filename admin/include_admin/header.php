@@ -28,8 +28,8 @@
             <li class="nav-item">
                 <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
             </li>
-            <li class="nav-item d-none d-sm-inline-block">
-                <a href="index3.html" class="nav-link">Home</a>
+            <li class="">
+                <a href="http://localhost/medilab/admin/view/admin_view/dashboard.php" class="nav-link">Home</a>
             </li>
             <li class="nav-item d-none d-sm-inline-block">
                 <a href="#" class="nav-link">Contact</a>
@@ -184,16 +184,16 @@
                 <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                     <!-- Add icons to the links using the .nav-icon class
                          with font-awesome or any other icon font library -->
-                    <li class="nav-item">
-                        <a href="http://localhost/medilab/admin/view/admin_view/users/index.php" class="">
-                            <i class="nav-icon fas fa-tachometer-alt"></i>
+                    <li class="nav-link">
+                        <a href="http://localhost/medilab/admin/view/admin_view/users/index.php" class="nav-link">
+                            <i class="nav-icon fa fa-user-circle"></i>
                             <p>
                                 Users
                             </p>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a href="http://localhost/medilab/admin/view/admin_view/category/index.php" class="">
+                    <li class="nav-link">
+                        <a href="http://localhost/medilab/admin/view/admin_view/category/index.php" class="nav-link">
                             <i class="nav-icon fas fa-th"></i>
                             <p>
                                 Categories
@@ -201,56 +201,51 @@
                             </p>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a href="http://localhost/medilab/admin/view/admin_view/products/index.php" class="">
+                    <li class="nav-link">
+                        <a href="http://localhost/medilab/admin/view/admin_view/products/index.php" class="nav-link">
                             <i class="nav-icon fas fa-chart-pie"></i>
                             <p>
                                 Products
                             </p>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a href="http://localhost/medilab/admin/view/admin_view/areas/index.php" class="">
-                            <i class="nav-icon fas fa-tree"></i>
+                    <li class="nav-link">
+                        <a href="http://localhost/medilab/admin/view/admin_view/areas/index.php" class="nav-link">
+                            <i class="nav-icon fa fa-location-arrow"></i>
                             <p>
                                 Cities
                             </p>
                         </a>
                     </li>
 
-                    <li class="nav-item">
-                        <a href="http://localhost/medilab/admin/view/admin_view/orders/index.php" class="">
+                    <li class="nav-link">
+                        <a href="http://localhost/medilab/admin/view/admin_view/orders/index.php" class="nav-link">
                         <i class="nav-icon fas fa-table"></i>
                             <p>
                                 orders
                             </p>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-link">
                         <a href="#" class="nav-link">
                             <i class="nav-icon far fa-calendar-alt"></i>
                             <p>
-                                All Orders
-                                <span class="badge badge-info right">2</span>
+                                New Orders
+                                <span class="badge badge-info right"></span>
                             </p>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-link">
                         <a href="#" class="nav-link">
-                            <i class="far fa-circle nav-icon"></i>
-                            <p>Contacts</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="far fa-circle nav-icon"></i>
+                            <i class="nav-icon fa fa-question-circle"></i>
+
                             <p>FAQ</p>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="far fa-circle nav-icon"></i>
-                            <p>Contact us</p>
+                    <li class="nav-link">
+                        <a href="http://localhost/medilab/admin/index.php?action=logout" class="nav-link">
+                            <i class="nav-icon fa fa-sign-out"></i>
+                            <p>Log out</p>
                         </a>
                     </li>
                 </ul>

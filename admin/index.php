@@ -1,5 +1,12 @@
 <?php
 include 'Helper/helper_function.php';
+
+
+
+//if (!isset($_SESSION['users'])){
+//    header('location: login.php');
+//    die();
+//}
 if(isset($_POST['action'])){
     $method = $_POST['action'];
 }
@@ -23,6 +30,7 @@ if($method == 'deActivate') {
     $register->deActivate_city($_GET);
 }
 if($method == 'Activate') {
+
   $register->active_city($_GET);
 }
 if($method == 'deleteCity'){
@@ -48,7 +56,16 @@ elseif($method == 'rejectOrder'){
 }elseif ($method == 'generate_report'){
 
     $register->generate_report($_POST, $_FILES);
+}
+elseif ($method == 'deleteOrder'){
+    $register->deleteOrder($_GET);
 
+}
+
+elseif($method == 'logout'){
+    unset($_SESSION['users']);
+    header("location: http://" . $_SERVER['HTTP_HOST'] . "/medilab/admin/view/register/login.php");
+    die();
 }
 
 

@@ -1,25 +1,30 @@
 <?php
 require 'pdfcrowd.php';
-include '../../../models/RegisterModel.php';
-require_once '../../../Helper/Connect.php';
-$connection = new connectionClass;
 
 Class PDF{
 
-    function generate_pdf(){
-        $path = 'http://localhost/medilab/admin/media/products/imageshepatitus.jpg';
+    function generate_pdf($result){
+        $path_info = $result['report'];
+
+
+//        $path = 'http://localhost/medilab/admin/'.$path_info;
+        $path = "http:/localhost/medilab/admin/media/reports".$path_info;
+//        'http://localhost/medilab/admin/media/reports/imagescancer.jpg';
+
         $type = pathinfo($path, PATHINFO_EXTENSION);
         $data = file_get_contents($path);
         $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
         try
         {
             $temp = "999999";
-            $data = $this->html_page($base64,);
+            $data = $this->html_page($base64,$result);
             // create the API client instance
-            $client = new \Pdfcrowd\HtmlToPdfClient("ibrar", "052f3b7182fcf4f136dd4001616a42d7");
-
+            $client = new \Pdfcrowd\HtmlToPdfClient("ibrar", "f69f5af10b716e0f70d8119a56872009");
+//            $random = rand() . ".pdf";
+//            $pdf= 'pdf';
             // run the conversion and write the result to a file
-            $client->convertStringToFile($data, 'example.pdf');
+            $client->convertStringToFile($data,  'media/reports/'. rand(). ".pdf");
+            return 'ok';
         }
         catch(\Pdfcrowd\Error $why)
         {
@@ -27,11 +32,24 @@ Class PDF{
             error_log("Pdfcrowd Error: {$why}\n");
 
             // rethrow or handle the exception
-            throw $why;
+            return $why;
         }
     }
 
-    function html_page($img){
+    function html_page($img,$data ){
+        $image = $data['report'];
+
+        $patient_name = $data['user_name'];
+        $patient_id = $data['user_id'];
+        $contact = $data['contact'];
+        $price = $data['price'];
+        $payment = $data['payment_method'];
+        $product_name = $data['name'];
+
+        $date = date("l jS \of F Y h:i:s A") ;
+
+
+
 
         return '<!doctype html>
 <html>
@@ -139,13 +157,13 @@ Class PDF{
                     <table>
                         <tr>
                             <td class="title">
-                                <img src="'.$img.'" style="width:100%; max-width:300px;">
+                                <img src="'.$image.'" style="width:100%; max-width:300px;">
                             </td>
                             
                             <td>
-                                Invoice #: 123<br>
-                                Created: January 1, 2015<br>
-                                Due: February 1, 2015
+                                Invoice #: <br>
+                                Created: '.$date.' <br>
+                                
                             </td>
                         </tr>
                     </table>
@@ -157,15 +175,19 @@ Class PDF{
                     <table>
                         <tr>
                             <td>
-                                Sparksuite, Inc.<br>
+                                Medilab Pvt Ltd.<br>
                                 12345 Sunny Road<br>
-                                Sunnyville, CA 12345
+                                Lahore, CA 12345
                             </td>
                             
                             <td>
-                                Acme Corp.<br>
-                                John Doe<br>
-                                john@example.com
+                                
+                                <h3>Patient Record:</h3><br>
+                                
+                                Name: '.$patient_name.' <br>
+                                ID : '.$patient_id.' <br>
+                                Contact : '.$contact.'<br>
+                                
                             </td>
                         </tr>
                     </table>
@@ -174,27 +196,18 @@ Class PDF{
             
             <tr class="heading">
                 <td>
-                    Payment Method
+                    Payment Method: 
                 </td>
                 
                 <td>
-                    Check #
+                    '.$payment.' 
                 </td>
             </tr>
             
-            <tr class="details">
-                <td>
-                    Check
-                </td>
-                
-                <td>
-                    1000
-                </td>
-            </tr>
             
             <tr class="heading">
                 <td>
-                    Item
+                    Test Name
                 </td>
                 
                 <td>
@@ -204,40 +217,17 @@ Class PDF{
             
             <tr class="item">
                 <td>
-                    Website design
+                     '.$product_name.'
                 </td>
                 
                 <td>
-                    $300.00
+                   '.$price.'
                 </td>
             </tr>
             
-            <tr class="item">
-                <td>
-                    Hosting (3 months)
-                </td>
-                
-                <td>
-                    $75.00
-                </td>
-            </tr>
+          
             
-            <tr class="item last">
-                <td>
-                    Domain name (1 year)
-                </td>
-                
-                <td>
-                    $10.00
-                </td>
-            </tr>
             
-            <tr class="total">
-                <td></td>
-                
-                <td>
-                   Total: $385.00
-                </td>
             </tr>
         </table>
     </div>
@@ -247,7 +237,7 @@ Class PDF{
 }
 
 $obj = new PDF();
-$obj->generate_pdf();
+
 //$client = new \Pdfcrowd\HtmlToPdfClient("ibrar", "052f3b7182fcf4f136dd4001616a42d7");
 //$pdf = $client->convertUrl('https://en.wikipedia.org/');
 //$pdf = $client->convertFile('/');

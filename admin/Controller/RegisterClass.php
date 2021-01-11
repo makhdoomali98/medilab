@@ -1,6 +1,7 @@
 <?php
 session_start();
 include __DIR__."/../models/RegisterModel.php";
+include __DIR__."/pdf.php";
 
 class RegisterClass{
     public $register;
@@ -15,6 +16,8 @@ class RegisterClass{
 
             if ($validate['role_type'] == "admin") {
                 $_SESSION["users"] = $response->fetch_assoc();
+//                print_r($_SESSION["users"]["role_type"]);
+//                die();
 
                 header("location: http://" . $_SERVER['HTTP_HOST'] . "/medilab/admin/view.php?action=dashboard");
                 die();
@@ -63,6 +66,13 @@ class RegisterClass{
         die();
 
     }
+    function deleteOrder($data){
+
+        $response = $this->register->deleteOrder($data);
+        header("location: http://" . $_SERVER['HTTP_HOST'] . "/medilab/admin/view/admin_view/orders/index.php");
+        die();
+
+    }
     function deleteCategory($data){
         $response = $this->register->deleteCategory($data);
         header("location: http://" . $_SERVER['HTTP_HOST'] . "/medilab/admin/view/admin_view/category/index.php");
@@ -97,8 +107,13 @@ class RegisterClass{
 
     }
     function generate_report($data,$files){
+        $result = $this->register->generate_report($data,$files);
 
-        $this->register->generate_report($data, $files);
+
+
+        $generate = new PDF();
+        print_r($generate->generate_pdf($result));
+
 
     }
 
