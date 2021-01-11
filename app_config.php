@@ -1,4 +1,5 @@
 <?php
+
  class Project_Config{
     public static $host = "localhost";
     public static $dbusername = "root";
