@@ -6,7 +6,6 @@ if (!isset($_SESSION["users"])){
 }
 include '../../../include_admin/header.php';
 include '../../../models/RegisterModel.php';
-//
 require_once '../../../Helper/Connect.php';
 $connection = new connectionClass;
 

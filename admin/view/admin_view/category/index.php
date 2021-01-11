@@ -50,20 +50,20 @@ $category = new RegisterModel($connection->conn);
                                                     <form action="../../../index.php" method="POST" enctype="multipart/form-data" style="padding-left: 250px;" >
                                                         <div class="row">
                                                             <div class="form-group">
-                                                                <label for="addArea"></label>
-                                                                <input type="hidden" class="form-control" value="addArea" id="addArea" name="action" >
+                                                                <label for="addCategory"></label>
+                                                                <input type="hidden" class="form-control" value="addCategory" id="addCategory" name="action" >
                                                             </div>
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-12 mb-3">
                                                                 <label for="name">Name</label>
-                                                                <input type="text" name="name" placeholder="Enter City Name">
+                                                                <input type="text" name="name" placeholder="Enter Category Name">
                                                             </div>
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-12 mb-3">
-                                                                <label for="type">Type</label>
-                                                                <input type="text" name="state" placeholder="Status">
+                                                                <label for="type">Slug</label>
+                                                                <input type="text" name="slug" placeholder="Status">
                                                             </div>
                                                         </div>
                                                         <div class="modal-footer">

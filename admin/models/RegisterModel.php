@@ -33,6 +33,7 @@ class RegisterModel
     function get_cities(){
         return $this->conn->query("SELECT * FROM cities ");
     }
+
     /* category and city name conversion
     */
 //    function get_city_name(){
@@ -61,6 +62,21 @@ class RegisterModel
 //    }
     function get_categories(){
         return $this->conn->query("SELECT * FROM category ");
+    }
+    function create_category($data){
+        $name = $data['name'];
+        $check = "SELECT * from category where name = '$name'";
+        $check= $this->conn->query($check);
+
+        if ($check-> num_rows > 0) {
+            echo "city already exist";
+            die();
+        }
+        elseif($check->num_rows < 1)  {
+            $sql = "INSERT INTO category (name, slug)
+		Values ('" . $data['name'] . "','" . $data['slug'] . "')";
+            $result = $this->conn->query($sql);
+        }
     }
     function create_cities($data){
         $name = $data['name'];

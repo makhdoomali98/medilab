@@ -43,20 +43,24 @@ if($method == 'deleteProduct'){
 
     $register->deleteProduct($_GET);
 }
-elseif($method == 'editProduct')
+if($method == 'editProduct')
 {
     $register->editProduct($_POST , $_GET['id'] , $_FILES);
 }
-elseif($method == 'approveOrder'){
+if($method == 'approveOrder'){
 
     $register->approveOrder($_GET);
 }
-elseif($method == 'rejectOrder'){
+if($method == 'rejectOrder'){
     $register->rejectOrder($_GET);
-}elseif ($method == 'generate_report'){
-
+}
+if ($method == 'generate_report'){
     $register->generate_report($_POST, $_FILES);
 }
+if ($method == 'addCategory'){
+    $register->create_category($_POST);
+}
+
 elseif ($method == 'deleteOrder'){
     $register->deleteOrder($_GET);
 

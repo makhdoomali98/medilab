@@ -66,6 +66,11 @@ class RegisterClass{
         die();
 
     }
+    function create_category($data){
+        $response = $this->register->create_category($data);
+        header("location: http://" . $_SERVER['HTTP_HOST'] . "/medilab/admin/view/admin_view/category/index.php");
+        die();
+    }
     function deleteOrder($data){
 
         $response = $this->register->deleteOrder($data);
