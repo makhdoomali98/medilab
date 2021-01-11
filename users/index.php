@@ -29,16 +29,14 @@
 			$_POST['payment_method'] = $_GET['payment_method'];
 			$last_id = $register->register_order($_POST);
 			$register->register_patient($_GET,$last_id);
-			header("location: https://localhost/medilab/users/View/users_view/charge.php?&stripeToken=$stripe_token&stripeEmail=$stripe_email&price=$price");
+			header("location: https://localhost/medilab/users/View/users_view/charge.php?&stripeToken=$stripe_token&stripeEmail=$stripe_email&price=$price&last_id=$last_id");
+
 		}
 		if ($_GET['payment_method'] == "cash") {
-			print_r($_GET);
-			die();
 			$_POST['id'] = $_GET['product_id'];
 			$_POST['payment_method'] = $_GET['payment_method'];
 			$last_id = $register->register_order($_POST);
 			$register->register_patient($_GET,$last_id);
-			header("location: https://localhost/medilab/users/View/users_view/products.php ");
 		}
 		
 	}

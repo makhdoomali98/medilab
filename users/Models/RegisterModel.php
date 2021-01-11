@@ -9,7 +9,6 @@ require 'PHPMailer/PHPMailer/PHPMailers.php';
 require 'PHPMailer/PHPMailer/SMTP.php'; 
 class RegisterModel{
    public $conn;
-
     function __construct($conn)
     {
         $this->conn = $conn;

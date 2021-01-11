@@ -4,6 +4,10 @@ include '../../includes/header.php';
 if (isset($_SESSION['users'])) {
         header('location: https://localhost/medilab/users/View/users_view/index.php');
     }
+if (isset($_SESSION['wrong_credentials'])) {
+    echo $_SESSION['wrong_credentials'];
+    unset($_SESSION['wrong_credentials']);
+}
 ?>
 
 <main id="main">

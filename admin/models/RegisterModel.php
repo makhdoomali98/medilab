@@ -7,6 +7,7 @@ class RegisterModel
     function __construct($conn)
     {
         $this->conn = $conn;
+
     }
 
     function login($data)
@@ -106,20 +107,17 @@ class RegisterModel
     function generate_report($data,$files){
         $image = $this->upload_file($files['report'], 'reports/images');
         $id = ($data['order_id']);
-        $sql = "SELECT orders.id, orders.user_id, orders.product_id, users.name as user_name, products.name, orders.order_time, orders.status, orders.report FROM orders 
+        $sql = "SELECT orders.id, orders.user_id, orders.product_id, users.name as user_name, products.name,products.price,orders.payment_method,users.contact, orders.order_time, orders.status, orders.report FROM orders 
                                     INNER JOIN products on orders.product_id = products.id 
                                     INNER JOIN users on orders.user_id = users.id
                                     WHERE orders.id = $id";
         $qry = "UPDATE orders SET report= '" . $image . "' WHERE orders.id = $id";
         $qry = $this->conn->query($qry);
-        $result = $this->conn->query($sql);
-        $result = mysqli_fetch_assoc($result);
-        $generate = new PDF($result,$qry);
-        $generate->generate_pdf($result,$qry);
-        print_r($qry);
-        echo "<br>";
-        print_r($result);
-        die();
+        $sql = $this->conn->query($sql);
+        $result = mysqli_fetch_assoc($sql);
+
+        return $result;
+
 
 
 
@@ -142,7 +140,7 @@ class RegisterModel
     function active_city($data){
         $id=$data['id'];
         $sql = "UPDATE cities SET state = 1 where id = $id";
-        $this->conn->query($sql);
+        ($this->conn->query($sql));
     }
     function deActivate_city($data){
         $id=$data['id'];
@@ -152,6 +150,11 @@ class RegisterModel
     function deleteCity($data){
         $id=$data['id'];
         $sql= "DELETE from cities where id = $id";
+        $this->conn->query($sql);
+    }
+    function deleteOrder($data){
+        $id=$data['id'];
+        $sql= "DELETE from orders where id = $id";
         $this->conn->query($sql);
     }
     function deleteCategory($data){

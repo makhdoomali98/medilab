@@ -26,7 +26,7 @@ $results =$user->get_product_by_id($id);
         </div>
         <?php if (isset($results)) {
                  ?>
-        <form action="../../index.php?id=<?php echo $results['id']?>" method="get" value="proceed">
+        <form action="../../index.php?id=<?php echo $results['id']?>" method="get" value="proceed" id="fupForm" name="myForm" >
           <input type="hidden" class="form-control" value="proceed" id="proceed" name="action">
         <div class="row">
           <!-- <form action="action.php" method="post" value = "proceed"> -->
@@ -35,7 +35,7 @@ $results =$user->get_product_by_id($id);
             <div class="member d-flex align-items-start">
               <div class="pic"><img src="../../assets/img/doctors/doctors-1.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-
+                <input type="hidden" name="product_id" id="product_id" value="<?php echo $results['id'] ?>">
                 <h4 class="products-title"><?php echo $results['name'] ?></h4>
                 <p class="product-description"><h5>Description: <?php echo $results['description'] ?> </h5><br><h5>Category_id: <?php echo $results['category_id'] ?> </h5><br><h5>City_id: <?php echo $results['city_id'] ?></h5><br><h5>Image: <?php echo $results['image'] ?></h5><br><h5>Price: <?php echo $results['price'] ?> </h5></p>
                 <h5>Patient Information</h5>
@@ -96,8 +96,8 @@ $results =$user->get_product_by_id($id);
                   <!-- <a href="../../index.php?id=<?php echo $results['id']?>&action=proceed&value=cash" value="submit" class="btn btn-primary">Proceed</a> -->
                   <div style="text-align: center;padding-top: 20px">
                     <!-- ../../index.php?&action=proceed&payment_method=cash&id=<?php echo $results['id'] ?> -->
-                     <!-- <a href="#" type="submit" class="btn btn-success" style="width: 200px" id="cash_proceed" value="submit">Proceed</a> -->
-                     <button type="submit" class="btn btn-success" style="width: 200px" id="cash_proceed" value="submit" >proceed</button>
+                     <!-- <a  class="btn btn-success" style="width: 200px" id="cash_proceed" >Proceed</a> -->
+                     <button   class="btn btn-success" style="width: 200px" id="cash_proceed"   >proceed</button>
                      <form>
                       <input type="hidden" name="product_id" value="<?php echo $results['id'] ?>">
                       <input type="hidden" id="price" value="<?php echo $results['price'] ?>" name="price">

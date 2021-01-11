@@ -1,5 +1,9 @@
 <?php
-
+session_start();
+if (!isset($_SESSION["users"])){
+    header("location: http://" . $_SERVER['HTTP_HOST'] . "/medilab/admin/view/register/login.php");
+    die();
+}
 include '../../../include_admin/header.php';
 include '../../../models/RegisterModel.php';
 //
