@@ -1,11 +1,3 @@
-<<<<<<< HEAD:admin/view/register/signup.php
-
-<?php
-session_start();
-$title='Signup';
-include '../../includes/header.php';
-=======
-
 <?php
 $title='signup';
 $active='signup';
@@ -14,7 +6,6 @@ include '../../includes/header.php';
 if (isset($_SESSION['users'])) {
         header('location: https://localhost/medilab/users/View/users_view/index.php');
     }
->>>>>>> f9f1c79669d35e9dc25a0d0e51e20c99118a7b2f:users/View/register/signup.php
 if (isset($_SESSION["email_error_msg"])) {
     echo $_SESSION["email_error_msg"];
     unset($_SESSION["email_error_msg"]);
