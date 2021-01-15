@@ -38,5 +38,5 @@ include __DIR__. '../../../../app_config.php';
   $order_id =$_GET['last_id'];
   $sql ="UPDATE orders SET payment_key = '". $payment_key ."' WHERE id=$order_id ";
   $conn->query($sql);
-  header('location: View/users_view/products.php');
+  header('location: /medilab/users/View/users_view/products.php');
 ?>
