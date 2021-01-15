@@ -49,7 +49,7 @@ Class RegisterClass{
         }
     }
      function register_order($data){
-        
+
        return $this->register->register_order($data);
     }
     function edit_profile($data,$files){

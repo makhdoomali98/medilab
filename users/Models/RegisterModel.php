@@ -42,6 +42,7 @@ class RegisterModel{
         return $result;
     }
     function register_order($data){
+
         $user_id = $_SESSION["users"]['id'];
         $product_id =$data['id'];
         $order_time = date('Y/m/d h:i:s a', time());
