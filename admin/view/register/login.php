@@ -9,7 +9,7 @@ include '../../includes/header.php'; ?>
         <div class="container">
 
             <div class="d-flex justify-content-between align-items-center">
-                <h2>Log IN</h2>
+                <h2>Log IN | Admin</h2>
             </div>
 
         </div>
@@ -23,8 +23,8 @@ include '../../includes/header.php'; ?>
                     <div class="container">
 
                         <div class="section-title">
-                            <h2>Log In!</h2>
-            <p>Log In to Start Manage your Account</p>
+                            <h2>Log In | Admin</h2>
+            <p>Log In as <b>Admin</b> to Start Manage your Site</p>
         </div>
 
         <form action="../../index.php" method="post" class="php-email-form">

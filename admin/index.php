@@ -14,7 +14,8 @@ elseif (isset($_GET['action'])) {
     $method = $_GET['action'];
 }
 else {
-    echo "no action selected !!";
+    
+    header("location: http://" . $_SERVER['HTTP_HOST'] . "/medilab/admin/view/register/login.php");
     die();
 }
 if($method == 'addProduct'){

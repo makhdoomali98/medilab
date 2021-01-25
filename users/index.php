@@ -1,6 +1,5 @@
 <?php
  include 'Helper/Helper.php';
-
  if(isset($_POST['action'])){
  	$method = $_POST['action'];
  }elseif(isset($_GET['action'])) {
@@ -21,6 +20,7 @@
 	}
 
 	if ($method == "proceed") {
+		
 		if ($_GET['payment_method'] == "stripe") {
 			$stripe_token =$_GET['stripeToken'];
 			$stripe_email =$_GET['stripeEmail'];

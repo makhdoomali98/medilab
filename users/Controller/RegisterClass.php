@@ -38,7 +38,7 @@ Class RegisterClass{
     	 if ($response->num_rows>0){
             if ($result['role_type'] == "admin" ) {
                 $_SESSION["users"]=$response->fetch_assoc();
-                return header('location: admin.php');
+                return header("location: http://" . $_SERVER['HTTP_HOST'] . "/medilab/admin/view.php?action=dashboard");
             }if ($result['role_type'] == "user" ){
                 $_SESSION["users"]=$response->fetch_assoc();
                 return header('location: View/users_view/products.php');

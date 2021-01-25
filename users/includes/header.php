@@ -73,10 +73,11 @@ session_start();
             <ul>
 
                 <li class="<?php if(isset($active)){if($active == 'index'){echo'active';}}?>"><a href="http://<?php print_r($_SERVER['HTTP_HOST']);?>/medilab/users/View/users_view/index.php">Home</a></li>
+                <?php if(isset($_SESSION['users'])){if($_SESSION['users']){?>
                 <li class="<?php if(isset($active)){if($active == 'products'){ echo'active';}}?>"><a href="http://<?php print_r($_SERVER['HTTP_HOST']);?>/medilab/users/View/users_view/products.php">Products</a></li>
                 <li class="<?php if(isset($active)){if($active == 'orders'){echo'active';}}?>"><a href="http://<?php print_r($_SERVER['HTTP_HOST']);?>/medilab/users/View/users_view/orders.php">Orders</a></li>
                  <li class="<?php if(isset($active)){if($active == 'contactUs'){echo'active';}}?>"><a href="http://<?php print_r($_SERVER['HTTP_HOST']);?>/medilab/users/View/users_view/contactUs.php">Contact</a></li>
-                <?php if(isset($_SESSION['users'])){if($_SESSION['users']){?>
+                
                 <li class="drop-down <?php if(isset($active)){if($active == 'profile'){ echo'active';}}?>" ><a href="#"><?php print_r($_SESSION['users']['name']) ?></a>
                     <ul>
                         <li><a href="http://<?php print_r($_SERVER['HTTP_HOST']);?>/medilab/users/View/register/edit_profile.php">Edit Profile</a></li>

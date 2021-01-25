@@ -1,1 +1,3 @@
-<h5>yoyo</h5>
+<?php
+header('location: https://localhost/medilab/users/View/users_view/index.php');
+?>

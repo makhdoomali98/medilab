@@ -66,26 +66,7 @@
         <!-- <a href="index.php" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
         <nav class="nav-menu d-none d-lg-block">
-            <ul>
-                <li class="active"><a href="index.php">Home</a></li>
-                <li><a href="products.php">Products</a></li>
-                <li><a href="#departments">Departments</a></li>
-                <li><a href="checkout.html">cart</a></li>
-                <li class="drop-down"><a href="#">Drop Down</a>
-                    <ul>
-                        <li class="drop-down"><a href="#">Settings</a>
-                            <ul>
-                                <li><a href="myprofile.php">Edit Profile</a></li>
-                            </ul>
-                        </li>
-
-                        <li><a href="login.php">Logout</a></li>
-
-                    </ul>
-                </li>
-                <li><a href="contactUs.php">Contact</a></li>
-
-            </ul>
+          
         </nav><!-- .nav-menu -->
 
 
