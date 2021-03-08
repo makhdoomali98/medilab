@@ -67,7 +67,7 @@ class RegisterModel{
         $mail->Host = 'smtp.gmail.com';       // Specify main and backup SMTP servers 
         $mail->SMTPAuth = true;               // Enable SMTP authentication 
         $mail->Username = 'bscsf16-08@qu.edu.pk';   // SMTP username 
-        $mail->Password = 'balo1998';   // SMTP password 
+        $mail->Password = 'password';   // SMTP password 
         $mail->SMTPSecure = 'tls';            // Enable TLS encryption, `ssl` also accepted 
         $mail->Port = 587;                    // TCP port to connect to 
          
