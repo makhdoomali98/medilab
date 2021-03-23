@@ -102,7 +102,7 @@ $results =$user->get_product_by_id($id);
                       <input type="hidden" name="product_id" value="<?php echo $results['id'] ?>">
                       <input type="hidden" id="price" value="<?php echo $results['price'] ?>" name="price">
                       <script src="https://checkout.stripe.com/checkout.js" id="stripe-button" class="stripe-button" data-key="<?php echo $stripe['publishable_key']; ?>"></script>
-                      <a href="#" class="btn btn-success" style="width: 200px" id="rsa-payment-btn" value="submit">RSA</a>
+                      <a href="../users_view/rsa.php?id=<?php echo $results['id']?>" class="btn btn-success" style="width: 200px" id="rsa-payment-btn" value="submit">RSA</a>
 
                   </div>
                   </form>
@@ -122,6 +122,7 @@ $results =$user->get_product_by_id($id);
             echo "no data found";
           }
           ?>
+          
       </div>
     </section><!-- End Doctors Section -->
 <?php include '../../includes/footer.php' ?>

@@ -38,6 +38,9 @@
 			$last_id = $register->register_order($_POST);
 			$register->register_patient($_GET,$last_id);
 		}
+		if ($_GET['payment_method'] == "rsa") {
+			
+		}
 		
 	}
 
